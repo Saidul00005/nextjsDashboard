@@ -1,5 +1,5 @@
+import NavLinks from "../ui/dashboard/nav-links";
 
-import NavLinks from '../ui/dashboard/nav-links';
 
 
 export default function Layout({
@@ -11,8 +11,10 @@ export default function Layout({
     <html lang="en">
       <body>
         <NavLinks />
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
-    </html>
+    </html >
   );
 }
