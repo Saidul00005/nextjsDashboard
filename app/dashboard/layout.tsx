@@ -1,6 +1,4 @@
-import NavLinks from "../ui/dashboard/nav-links";
-
-
+import SideNav from "@/app/ui/dashboard/sidenav";
 
 export default function Layout({
   children,
@@ -10,11 +8,16 @@ export default function Layout({
   return (
     <html lang="en">
       <body>
-        <NavLinks />
+        {/* Sidebar */}
+        <aside>
+          <SideNav />
+        </aside>
+        {/* Main Content */}
         <main>
           {children}
         </main>
       </body>
-    </html >
+    </html>
+
   );
 }
